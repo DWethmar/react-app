@@ -13,11 +13,15 @@
     "babel-loader": "^8.0.5",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-react": "^7.13.0",
     "lerna": "^3.13.4",
     "plop": "^2.3.0",
     "typescript": "^3.4.5",
     "webpack": "4.29.6"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "scripts": {
     "postinstall": "lerna bootstrap",
@@ -25,6 +29,6 @@
     "build-storybook": "build-storybook",
     "build": "lerna run build",
     "test": "cross-env CI=true lerna run test --stream",
-    "lint": "eslint packages"
+    "lint": "eslint --ext ts,tsx packages"
   }
 }

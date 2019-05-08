@@ -5,8 +5,9 @@ module.exports = {
         "es6": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        // "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -22,11 +23,5 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "rules": {
-        'import/no-extraneous-dependencies': [{
-            devDependencies: [
-                '*.stories.tsx'
-            ]
-        }]
-    }
+    "rules": {}
 };
