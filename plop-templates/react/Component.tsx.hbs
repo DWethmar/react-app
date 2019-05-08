@@ -1,0 +1,11 @@
+import { {{ pascalCase component }}Props } from './{{ pascalCase component }}.props';
+import './{{ pascalCase component }}.sass';
+
+export const {{pascalCase component}}: React.FC<{{ pascalCase component }}Props> = ({heading}): JSX.Element => {
+    return (
+        <div className="{{kebabCase component}}">
+            <h1>{heading ? heading : 'no heading set'}</h1>
+            <p>Created {{pascalCase component}}</p>
+        </div>
+    );
+};

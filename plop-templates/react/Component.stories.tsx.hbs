@@ -1,0 +1,10 @@
+/* eslint-disable */
+import * as React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { {{ pascalCase component }}Dummy as data } from './{{ pascalCase component }}.dummy';
+import { {{pascalCase component}} } from './{{pascalCase component}}';
+
+storiesOf('{{pascalCase component}}', module)
+    .addDecorator(withKnobs)
+    .add('Default', () =><{{ pascalCase component }} {...data} />);
