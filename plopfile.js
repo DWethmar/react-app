@@ -48,7 +48,7 @@ module.exports = plop => {
                 type: 'append',
                 path: 'packages/{{camelCase package}}/components.ts',
                 pattern: `/* PLOP_INJECT_IMPORT */`,
-                template: `import { {{pascalCase component}} } from './{{pascalCase component}}/{{pascalCase component}}';`,
+                template: `import { {{pascalCase component}} } from './src/{{pascalCase component}}/{{pascalCase component}}';`,
             }, {
                 type: 'append',
                 path: 'packages/{{camelCase package}}/components.ts',
@@ -58,27 +58,27 @@ module.exports = plop => {
             // React stuff
             {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.tsx',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.tsx',
                 templateFile: 'plop-templates/react/Component.tsx.hbs',
             }, {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.scss',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.scss',
                 templateFile: 'plop-templates/react/Component.scss.hbs',
             }, {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.props.ts',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.props.ts',
                 templateFile: 'plop-templates/react/Component.props.ts.hbs',
             }, {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.dummy.ts',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.dummy.ts',
                 templateFile: 'plop-templates/react/Component.dummy.ts.hbs',
             }, {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.test.tsx',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.test.tsx',
                 templateFile: 'plop-templates/react/Component.test.tsx.hbs',
             }, {
                 type: 'add',
-                path: 'packages/{{camelCase package}}/{{pascalCase component}}/{{pascalCase component}}.stories.tsx',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.stories.tsx',
                 templateFile: 'plop-templates/react/Component.stories.tsx.hbs',
             },
         ],

@@ -1,7 +1,7 @@
 /* PLOP_INJECT_IMPORT */
-import { HelloWorld } from './HelloWorld/HelloWorld';
+import { HelloWorld } from './src/HelloWorld/HelloWorld'
 
 export {
-/* PLOP_INJECT_EXPORT */
+    /* PLOP_INJECT_EXPORT */
     HelloWorld,
 }

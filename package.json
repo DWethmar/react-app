@@ -11,6 +11,7 @@
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0",
     "lerna": "^3.13.4",
@@ -22,7 +23,7 @@
     "postinstall": "lerna bootstrap",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "lerna run test",
+    "test": "cross-env CI=true lerna run test --stream",
     "lint": "eslint packages"
   }
 }

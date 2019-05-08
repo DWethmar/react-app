@@ -2,10 +2,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { {{pascalCase component}} } from './{{pascalCase component}}';
-import { {{ pascalCase component }}Dummy as data } from './{{ pascalCase component }}.dummy';
+import { {{ pascalCase component }}Dummy as dummyData } from './{{ pascalCase component }}.dummy';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<{{pascalCase component}} {...data} />, div);
+    ReactDOM.render(<{{pascalCase component}} {...dummyData} />, div);
     ReactDOM.unmountComponentAtNode(div);
 });
