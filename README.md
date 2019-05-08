@@ -1,5 +1,6 @@
 # React App
 
+[![travis](https://api.travis-ci.com/DWethmar/react-app.svg?branch=master)](https://travis-ci.com/DWethmar/react-app)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org/)
