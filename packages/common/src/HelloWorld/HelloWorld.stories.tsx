@@ -7,4 +7,4 @@ import { HelloWorld } from './HelloWorld';
 
 storiesOf('HelloWorld', module)
     .addDecorator(withKnobs)
-    .add('Default', () =><HelloWorld {...data} />);
+    .add('Default', () => <HelloWorld {...data} />);

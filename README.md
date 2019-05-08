@@ -23,7 +23,7 @@ Some opinionated choices:
 -   React
     -   Only function components with hooks.
     -   Re-usable components are node packages (managed with lerna).
--   Use [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) in vscode.
+-   Use [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) in vscode as an Eslint plugin.
 -   [4 spaces](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md) instead of tabs. (also see: `.editorconfig`)
 -   Avoid `index.ts` or `index.js` files.
 
