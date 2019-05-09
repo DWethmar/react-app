@@ -31,7 +31,6 @@
     "webpack": "4.29.6"
   },
   "scripts": {
-    "postinstall": "npm run bootstrap",
     "bootstrap": "lerna bootstrap --no-ci --hoist --loglevel warn --concurrency 4",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
