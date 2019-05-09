@@ -9,6 +9,7 @@ module.exports = {
         sourceType: 'module', // Allows for the use of imports
         ecmaFeatures: {
             jsx: true, // Allows for the parsing of JSX
+            modules: true
         },
     },
     rules: {
@@ -17,7 +18,8 @@ module.exports = {
         'react/prop-types': false,
         'key-spacing': ["error", {
             "align": "value"
-        }]
+        }],
+        'quote-props': ["error", "consistent"]
     },
     settings: {
         react: {

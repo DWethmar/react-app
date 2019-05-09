@@ -3,5 +3,5 @@ import { HelloWorld } from './src/HelloWorld/HelloWorld';
 
 export {
     /* PLOP_INJECT_EXPORT */
-    HelloWorld,
+    HelloWorld
 };

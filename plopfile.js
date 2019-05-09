@@ -4,8 +4,7 @@ module.exports = plop => {
     plop.setGenerator('react-typescript-package', {
         description: 'Create a Lerna React-component',
         // User input prompts provided as arguments to the template
-        prompts: [
-            {
+        prompts: [{
                 type: 'input',
                 name: 'package',
                 message: 'What is your package name?',
@@ -89,8 +88,7 @@ module.exports = plop => {
             },
             {
                 type: 'add',
-                path:
-                    'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.stories.tsx',
+                path: 'packages/{{camelCase package}}/src/{{pascalCase component}}/{{pascalCase component}}.stories.tsx',
                 templateFile: 'plop-templates/react/Component.stories.tsx.hbs',
             },
         ],

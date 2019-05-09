@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import { HelloWorld } from '@react-app/common/components'
+import { HelloWorld } from "@react-app/common/components";
 
 const App: React.FC = () => {
   return (
@@ -20,10 +20,10 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
-        <HelloWorld heading="hoi"></HelloWorld>
+        <HelloWorld heading="hoi" />
       </header>
     </div>
   );
-}
+};
 
 export default App;
