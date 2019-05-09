@@ -12,9 +12,9 @@
             "autoFix": true
         }
     ],
-    "editor.formatOnSave": true,
     "[handlebars]": {
         "editor.formatOnSave": false
     },
-    "tslint.autoFixOnSave": true
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
 }
