@@ -32,11 +32,12 @@
     "eslint-plugin-react": "^7.13.0"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "npm run bootstrap",
+    "bootstrap": "lerna bootstrap --no-ci --hoist --loglevel warn --concurrency 4",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
     "build": "lerna run build",
-    "test": "cross-env CI=true lerna run test --stream",
+    "test": "lerna run test --stream",
     "lint": "eslint --ext ts,tsx packages"
   },
   "dependencies": {}
