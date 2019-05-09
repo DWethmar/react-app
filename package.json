@@ -37,7 +37,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",
     "build": "lerna run build",
-    "test": "lerna run test --stream",
+    "test": "cross-env CI=true lerna run test --stream",
     "lint": "eslint --ext ts,tsx packages"
   },
   "dependencies": {}
