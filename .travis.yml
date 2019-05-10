@@ -8,3 +8,10 @@ script:
   - npm run bootstrap
   - npm test
   - npm run lint
+  - sonar-scanner
+
+addons:
+  sonarcloud:
+    organization: "dwethmar-github"
+    token:
+      secure: "$SONAR_TOKEN"
