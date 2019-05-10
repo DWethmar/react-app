@@ -13,16 +13,17 @@ module.exports = {
         },
     },
     rules: {
+        '@typescript-eslint/indent': ["error", 4],
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
         'quotes': ["error", "single", {
             allowTemplateLiterals: true
         }],
+        'quote-props': ['error', 'consistent'],
         'react/prop-types': false,
         'key-spacing': ["error", {
-            align: "value"
+            "align": "value"
         }],
-        'quote-props': ['error', 'consistent']
     },
     settings: {
         react: {
