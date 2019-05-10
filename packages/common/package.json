@@ -2,24 +2,49 @@
     "name": "@react-app/common",
     "private": true,
     "version": "0.1.0",
+    "main": "dist/index.js",
+    "types": "dist/types/index.d.ts",
     "devDependencies": {
         "@types/jest": "24.0.12",
         "@types/node": "12.0.0",
         "@types/react": "16.8.17",
-        "@types/react-dom": "16.8.4"
+        "@types/react-dom": "16.8.4",
+        "jest": "^24.8.0"
+    },
+    "peerDependencies": {
+        "react": "^16.x",
+        "react-dom": "^16.x"
     },
     "dependencies": {
-        "@types/jest": "24.0.12",
-        "@types/node": "12.0.0",
-        "@types/react": "16.8.17",
-        "@types/react-dom": "16.8.4",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-scripts": "3.0.0",
         "typescript": "3.4.5"
     },
     "scripts": {
-        "test": "react-scripts test",
-        "build": "react-scripts build"
+        "test": "jest",
+        "build": "tsc"
+    },
+    "jest": {
+        "transform": {
+            ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testMatch": [
+            "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
+        ],
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 90,
+                "functions": 95,
+                "lines": 95,
+                "statements": 95
+            }
+        },
+        "collectCoverage": true
     }
 }

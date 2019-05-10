@@ -31,6 +31,7 @@
     "webpack": "4.29.6"
   },
   "scripts": {
+    "start": "cd packages/example-app && npm start",
     "bootstrap": "lerna bootstrap",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "build-storybook": "build-storybook",

@@ -12,7 +12,8 @@ Things you need to change if your are copying this project:
 
 - in the `package.json` file change the name.
 - remove `./packages/common`
-- remove `./apps/example`
+- remove `./packages/example-app`
+- edit start script in `package.json`.
 
 Some opinionated choices:
 
