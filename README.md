@@ -4,6 +4,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org/)
+[![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=DWethmar_react-app&metric=alert_status)](https://sonarcloud.io/dashboard?id=DWethmar_react-app)
 
 A starter project for react apps.
 
@@ -27,6 +28,7 @@ Some opinionated choices:
 - Auto format code with eslint.
 - 4 spaces indentation.
 - Re-usable code should be created with plop.
+- code quality with sonarcloud.
 
 ## Quick start
 
