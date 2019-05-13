@@ -5,6 +5,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://storybook.js.org/)
 [![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=DWethmar_react-app&metric=alert_status)](https://sonarcloud.io/dashboard?id=DWethmar_react-app)
+[![Coverage Status](https://coveralls.io/repos/github/DWethmar/react-app/badge.svg?branch=master)](https://coveralls.io/github/DWethmar/react-app?branch=master)
 
 A starter project for react apps.
 
